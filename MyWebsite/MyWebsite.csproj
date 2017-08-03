@@ -1,0 +1,85 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net452</TargetFramework>
+    <RuntimeIdentifier>win7-x86</RuntimeIdentifier>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Properties\PublishProfiles\CustomProfile.pubxml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\Contents\images\banner.jpg" />
+    <Content Include="wwwroot\Contents\images\logo-bottom1.png" />
+    <Content Include="wwwroot\Contents\images\logo-bottom2.png" />
+    <Content Include="wwwroot\Contents\images\logo-bottom3.png" />
+    <Content Include="wwwroot\Contents\images\logo-bottom4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="GoogleRecaptcha" Version="1.2.1" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Server.IISIntegration" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.2" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.1.2" />
+    <PackageReference Include="System.Linq.Dynamic" Version="1.0.7" />
+    <PackageReference Include="System.Web.Mvc.Extensions" Version="1.1.1.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\Contents\css\bootstrap.min.css" />
+    <None Include="wwwroot\Contents\css\magnific-popup.css" />
+    <None Include="wwwroot\Contents\css\normalize.css" />
+    <None Include="wwwroot\Contents\css\owl.carousel.css" />
+    <None Include="wwwroot\Contents\css\owl.theme.css" />
+    <None Include="wwwroot\Contents\css\responsive.css" />
+    <None Include="wwwroot\Contents\css\style.css" />
+    <None Include="wwwroot\Contents\fonts\Glyphter.eot" />
+    <None Include="wwwroot\Contents\fonts\Glyphter.svg" />
+    <None Include="wwwroot\Contents\fonts\Glyphter.ttf" />
+    <None Include="wwwroot\Contents\fonts\Glyphter.woff" />
+    <None Include="wwwroot\Contents\images\.DS_Store" />
+    <None Include="wwwroot\Contents\images\blog-1.png" />
+    <None Include="wwwroot\Contents\images\blog-2.jpg" />
+    <None Include="wwwroot\Contents\images\blog-3.jpg" />
+    <None Include="wwwroot\Contents\images\blog-4.jpg" />
+    <None Include="wwwroot\Contents\images\blog-5.jpg" />
+    <None Include="wwwroot\Contents\images\blog-6.jpg" />
+    <None Include="wwwroot\Contents\images\bw-1.png" />
+    <None Include="wwwroot\Contents\images\bw-2.png" />
+    <None Include="wwwroot\Contents\images\bw-3.png" />
+    <None Include="wwwroot\Contents\images\bw-4.png" />
+    <None Include="wwwroot\Contents\images\bw-5.png" />
+    <None Include="wwwroot\Contents\images\bw-6.png" />
+    <None Include="wwwroot\Contents\images\favicon.ico" />
+    <None Include="wwwroot\Contents\images\hero1.jpeg" />
+    <None Include="wwwroot\Contents\images\loader.gif" />
+    <None Include="wwwroot\Contents\images\logo-big.png" />
+    <None Include="wwwroot\Contents\images\logo-bottom.png" />
+    <None Include="wwwroot\Contents\images\logo.png" />
+    <None Include="wwwroot\Contents\images\signature.png" />
+    <None Include="wwwroot\Contents\images\testimonial-bg.jpg" />
+    <None Include="wwwroot\Contents\js\.DS_Store" />
+    <None Include="wwwroot\Contents\js\bootstrap.min.js" />
+    <None Include="wwwroot\Contents\js\classie.js" />
+    <None Include="wwwroot\Contents\js\html5shiv.min.js" />
+    <None Include="wwwroot\Contents\js\jquery-1.9.1.min.js" />
+    <None Include="wwwroot\Contents\js\jquery.appear.js" />
+    <None Include="wwwroot\Contents\js\jquery.magnific-popup.min.js" />
+    <None Include="wwwroot\Contents\js\main.js" />
+    <None Include="wwwroot\Contents\js\masonry.js" />
+    <None Include="wwwroot\Contents\js\masonry.pkgd.min.js" />
+    <None Include="wwwroot\Contents\js\owl.carousel.min.js" />
+    <None Include="wwwroot\Contents\js\smooth-scroll.min.js" />
+    <None Include="wwwroot\Contents\js\typed.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\PublishProfiles\" />
+  </ItemGroup>
+
+</Project>
