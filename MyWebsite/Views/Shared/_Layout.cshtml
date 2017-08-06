@@ -1,0 +1,141 @@
+﻿@inject Microsoft.ApplicationInsights.AspNetCore.JavaScriptSnippet JavaScriptSnippet
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Shivsunder Majhi</title>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="Shivsunder - Personal Website" name="description">
+    <meta content="BdgPixel" name="author">
+    <!--Fav-->
+    <link href="~/Contents/images/sm.png" rel="shortcut icon">
+    <!--styles-->
+    <link href="~/Contents/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Contents/css/owl.carousel.css" rel="stylesheet">
+    <link href="~/Contents/css/owl.theme.css" rel="stylesheet">
+    <link href="~/Contents/css/magnific-popup.css" rel="stylesheet">
+    <link href="~/Contents/css/style.css" rel="stylesheet">
+    <link href="~/Contents/css/responsive.css" rel="stylesheet">
+    <!--fonts google-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 9]>
+       <script type="text/javascript" src="js/html5shiv.min.js"></script>
+    <![endif]-->
+    @Html.Raw(JavaScriptSnippet.FullScript)
+</head>
+<body>
+    <!--PRELOADER-->
+    <div id="preloader">
+        <div id="status">
+            <img alt="logo" src="~/Contents/images/sm.png">
+        </div>
+    </div>
+    <!--/.PRELOADER END-->
+    <!--HEADER -->
+    <div class="header">
+        <div class="for-sticky">
+            <!--LOGO-->
+            <div class="col-md-2 col-xs-6 logo">
+                <a data-scroll="" href="#home"><img alt="logo" class="logo-nav" src="~/Contents/images/logo.png"></a>
+            </div>
+            <!--/.LOGO END-->
+        </div>
+        <div class="menu-wrap">
+            <nav class="menu">
+                <div class="menu-list">
+                    <a data-scroll="" href="#home" class="active">
+                        <span>Home</span>
+                    </a>
+                    <a data-scroll="" href="#about">
+                        <span>About</span>
+                    </a>
+                    <a data-scroll="" href="#skill">
+                        <span>Skills</span>
+                    </a>
+                    <a data-scroll="" href="#services">
+                        <span>Services</span>
+                    </a>
+                    <a data-scroll="" href="#education">
+                        <span>Education</span>
+                    </a>
+                    <a data-scroll="" href="#work">
+                        <span>Work</span>
+                    </a>
+                    <a data-scroll="" href="#contact">
+                        <span>Contact</span>
+                    </a>
+                </div>
+            </nav>
+            <button class="close-button" id="close-button">Close Menu</button>
+        </div>
+        <button class="menu-button" id="open-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button><!--/.for-sticky-->
+    </div>
+    <!--/.HEADER END-->
+    <!--CONTENT WRAP-->
+    <div class="content-wrap">
+        <!--CONTENT-->
+        <div class="content">
+            @RenderBody()
+            @*<hr />*@
+            <!--FOOTER-->
+            <footer>
+                <div class="footer-top">
+                    <ul class="socials">
+                        <li class="facebook">
+                            <a href="https://www.facebook.com/DarkLaureate" data-hover="Facebook">Facebook</a>
+                        </li>
+                        <li class="twitter">
+                            <a href="https://twitter.com/Shivsunder19" data-hover="Twitter">Twitter</a>
+                        </li>
+                        <li class="gplus">
+                            <a href="https://plus.google.com/+ShivsunderMajhi" data-hover="Google +">Google +</a>
+                        </li>
+                        <li class="github">
+                            <a href="https://github.com/Shivsunder" data-hover="GitHub">GitHub</a>
+                        </li>
+                        <li class="linkedin">
+                            <a href="https://www.linkedin.com/in/shivsunder-majhi-01861a9b/" data-hover="LinkedIn">LinkedIn</a>
+                        </li>
+                        <li class="researchgate">
+                            <a href="https://www.researchgate.net/profile/Shivsunder_Majhi" data-hover="Research Gate">Research Gate</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-bottom-edited">
+                    <div class="container">
+                        <div class="row">
+                            <a data-scroll="" href="#home"><img src="~/Contents/images/logo-bottom4.png" alt="crafted with love" class="center-block" />
+                            </a>
+                            <p class="row">This is a personal website and is developed by Shivsunder Majhi</p>
+                            <a data-scroll="" href="#home">
+                                <p class="row">&copy; 2017 Shivsunder Majhi</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!--/.FOOTER-END-->
+            </div>
+            <!--/.CONTENT END-->
+        </div>
+            <!--/.CONTENT-WRAP END-->
+            <script src="~/Contents/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+            <script src="~/Contents/js/jquery.appear.js" type="text/javascript"></script>
+            <script src="~/Contents/js/bootstrap.min.js" type="text/javascript"></script>
+            <script src="~/Contents/js/classie.js" type="text/javascript"></script>
+            <script src="~/Contents/js/owl.carousel.min.js" type="text/javascript"></script>
+            <script src="~/Contents/js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+            <script src="~/Contents/js/masonry.pkgd.min.js" type="text/javascript"></script>
+            <script src="~/Contents/js/masonry.js" type="text/javascript"></script>
+            <script src="~/Contents/js/smooth-scroll.min.js" type="text/javascript"></script>
+            <script src="~/Contents/js/typed.js" type="text/javascript"></script>
+            <script src="~/Contents/js/main.js" type="text/javascript"></script>
+            @RenderSection("Scripts", required: false)
+</body>
+</html>
